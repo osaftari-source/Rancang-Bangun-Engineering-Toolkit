@@ -1,0 +1,40 @@
+Rancang Bangun Engineering Toolkit Hub v1.0 — Upload Checklist
+
+Repository to create:
+Rancang-Bangun-Engineering-Toolkit
+
+Upload these items to the repository root:
+- index.html
+- manifest.webmanifest
+- sw.js
+- README.md
+- assets folder
+- icons folder
+
+Do NOT upload:
+- the ZIP file itself
+- the parent extracted folder as an extra layer
+
+Correct repository structure:
+Rancang-Bangun-Engineering-Toolkit/
+  index.html
+  manifest.webmanifest
+  sw.js
+  README.md
+  assets/
+    css/styles.css
+    js/app.js
+  icons/
+    icon-192.png
+    icon-512.png
+
+Current modules linked by Hub:
+- Pressure Drop Calculator:
+  https://osaftari-source.github.io/Pressure-Drop-Calculator/
+- Piping MTO Generator:
+  https://osaftari-source.github.io/Piping-MTO-Generator/
+- Pipe Support Span:
+  https://osaftari-source.github.io/Pipe-Support-Span/
+
+Important:
+This v1.0 hub does not modify any current app. Existing tools remain available from their original links.

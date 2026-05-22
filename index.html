@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0f5ea8">
+  <meta name="description" content="Rancang Bangun Engineering Toolkit — preliminary engineering tools for site survey and early evaluation.">
+  <title>Rancang Bangun Engineering Toolkit</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./assets/css/styles.css?v=1.0.0">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero" aria-label="Application header">
+      <div class="hero-top">
+        <span class="eyebrow">ENGINEERING TOOLKIT</span>
+        <span class="badge">Hub v1.0</span>
+      </div>
+      <h1>Rancang Bangun<br>Engineering Toolkit</h1>
+      <p class="hero-subtitle">Preliminary engineering tools for site survey, early evaluation, and quantity preparation.</p>
+    </header>
+
+    <section class="notice" aria-label="Usage limitation">
+      <strong>Preliminary use only.</strong>
+      <span>Verify results against applicable codes, project specifications, approved engineering documents, and professional engineering judgement.</span>
+    </section>
+
+    <section class="view active" id="disciplines-view" aria-labelledby="disciplines-title">
+      <div class="section-heading">
+        <div>
+          <p class="step">SELECT DISCIPLINE</p>
+          <h2 id="disciplines-title">Choose your work area</h2>
+        </div>
+        <span class="available-count">3 tools available</span>
+      </div>
+
+      <div class="discipline-grid">
+        <button class="discipline-card available" data-open-discipline="process" type="button">
+          <span class="discipline-icon">PR</span>
+          <span class="discipline-body">
+            <strong>Process</strong>
+            <span>Fluid flow and process calculations</span>
+          </span>
+          <span class="tool-chip">1 Tool</span>
+        </button>
+
+        <button class="discipline-card available" data-open-discipline="piping" type="button">
+          <span class="discipline-icon">PP</span>
+          <span class="discipline-body">
+            <strong>Piping</strong>
+            <span>Material take-off and preliminary support evaluation</span>
+          </span>
+          <span class="tool-chip">2 Tools</span>
+        </button>
+
+        <article class="discipline-card disabled" aria-label="Mechanical tools coming soon">
+          <span class="discipline-icon muted">ME</span>
+          <span class="discipline-body">
+            <strong>Mechanical</strong>
+            <span>Equipment-related engineering tools</span>
+          </span>
+          <span class="tool-chip muted">Coming Soon</span>
+        </article>
+
+        <article class="discipline-card disabled" aria-label="Civil and structural tools coming soon">
+          <span class="discipline-icon muted">CS</span>
+          <span class="discipline-body">
+            <strong>Civil / Structural</strong>
+            <span>Structural and civil preliminary tools</span>
+          </span>
+          <span class="tool-chip muted">Coming Soon</span>
+        </article>
+
+        <article class="discipline-card disabled" aria-label="Electrical and instrumentation tools coming soon">
+          <span class="discipline-icon muted">EI</span>
+          <span class="discipline-body">
+            <strong>Electrical &amp; Instrumentation</strong>
+            <span>Electrical and control tools</span>
+          </span>
+          <span class="tool-chip muted">Coming Soon</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="view" id="tools-view" aria-labelledby="tools-title">
+      <button class="back-button" id="back-button" type="button" aria-label="Back to disciplines">
+        <span aria-hidden="true">←</span> Back to Disciplines
+      </button>
+
+      <div class="section-heading tools-heading">
+        <div>
+          <p class="step" id="tools-eyebrow">DISCIPLINE</p>
+          <h2 id="tools-title">Tools</h2>
+          <p class="section-copy" id="tools-description"></p>
+        </div>
+      </div>
+
+      <div id="tool-cards" class="tool-list" aria-live="polite"></div>
+
+      <aside class="module-note">
+        <strong>Phase 1 Hub:</strong>
+        Each tool currently opens its existing standalone application. No calculator logic or trial app files are modified by this hub.
+      </aside>
+    </section>
+
+    <section class="update-card" aria-label="Application update">
+      <div>
+        <p class="step">APPLICATION UPDATE</p>
+        <p class="update-text">Check whether a newer Toolkit Hub interface is available.</p>
+        <p class="version-label">Current version: <strong>v1.0</strong></p>
+      </div>
+      <button class="secondary-button" id="check-update" type="button">Check for updates</button>
+    </section>
+
+    <footer class="footer">
+      <p>Developed by <strong>Osman Saftari</strong></p>
+      <p>Rancang Bangun Engineering Toolkit · Trial/Internal Testing · Hub v1.0</p>
+    </footer>
+  </main>
+
+  <div class="install-prompt hidden" id="install-prompt" role="dialog" aria-label="Install application">
+    <div>
+      <strong>Install this app</strong>
+      <span>One hub for engineering tools</span>
+    </div>
+    <button id="install-button" type="button">Install</button>
+    <button class="dismiss" id="dismiss-install" type="button" aria-label="Dismiss">×</button>
+  </div>
+
+  <div class="update-toast hidden" id="update-toast" role="alert">
+    <div>
+      <strong>New version available</strong>
+      <span>An updated version of the Toolkit Hub is ready.</span>
+    </div>
+    <button id="apply-update" type="button">Update now</button>
+  </div>
+
+  <div class="status-toast hidden" id="status-toast" role="status"></div>
+
+  <script src="./assets/js/app.js?v=1.0.0" defer></script>
+</body>
+</html>
