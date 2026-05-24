@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0f5ea8">
+  <meta name="description" content="About and development status of Rancang Bangun Engineering Toolkit.">
+  <title>About & Status | Rancang Bangun Engineering Toolkit</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./assets/css/styles.css?v=1.2.0">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero" aria-label="Application header">
+      <div class="hero-top"><span class="eyebrow">ENGINEERING TOOLKIT</span><span class="badge">Hub v1.2</span></div>
+      <div>
+        <h1>Rancang Bangun<br>Engineering Toolkit</h1>
+        <p class="hero-subtitle">Quick preliminary engineering tools for early evaluation, site-related calculations, and quantity preparation.</p>
+      </div>
+      <nav class="top-nav" aria-label="Application navigation">
+        <a class="nav-link" href="./index.html">Tools</a>
+        <a class="nav-link" href="./propose.html">Propose a Tool</a>
+        <a class="nav-link active" href="./about.html" aria-current="page">About &amp; Status</a>
+      </nav>
+    </header>
+
+    <div class="page-title">
+      <p class="step">ABOUT THIS TOOLKIT</p>
+      <h2>Purpose &amp; Development Status</h2>
+      <p>Purpose, active modules, candidate development roadmap, and update status of this internal engineering initiative.</p>
+    </div>
+
+    <section class="status-layout" aria-label="Development status content">
+      <article class="info-card span-all">
+        <h3>Developer Message</h3>
+        <p>Rancang Bangun Engineering Toolkit is developed to help engineers perform quick preliminary calculations, early evaluations, and site-related assessments more efficiently.</p>
+        <p>This toolkit supports engineering work; it does not replace approved engineering calculations, applicable codes, project specifications, vendor documents, or professional engineering review.</p>
+      </article>
+
+      <article class="info-card">
+        <h3>Current Development Phase</h3>
+        <span class="phase-badge">Phase 1 — Toolkit Hub Trial</span>
+        <ul class="status-list">
+          <li>Centralized access to available engineering tools.</li>
+          <li>Discipline-based navigation for Process and Piping.</li>
+          <li>Installable Toolkit Hub for mobile access.</li>
+          <li>Existing tools remain standalone applications during trial.</li>
+          <li>Proposal page introduced to collect new tool ideas.</li>
+        </ul>
+      </article>
+
+      <article class="info-card available-tools">
+        <h3>Available Tools</h3>
+        <div class="tool-row"><strong>Pressure Drop Calculator</strong><span>Process · Preliminary pressure drop and velocity evaluation.</span></div>
+        <div class="tool-row"><strong>Piping MTO Generator</strong><span>Piping · Preliminary piping material take-off preparation.</span></div>
+        <div class="tool-row"><strong>Pipe Support Span Calculator</strong><span>Piping · Preliminary support spacing and estimated vertical distributed load.</span></div>
+      </article>
+
+      <article class="info-card span-all">
+        <h3>Candidate Development Roadmap</h3>
+        <p class="card-intro">Proposed future tools will be developed one by one after scope, references, input/output needs, and validation examples are available.</p>
+        <div class="roadmap-grid">
+          <div class="roadmap-item"><strong>Engineering Unit &amp; Instrument Signal Converter</strong><span>Process / E&amp;I</span></div>
+          <div class="roadmap-item"><strong>Line Sizing &amp; Velocity Screening</strong><span>Process</span></div>
+          <div class="roadmap-item"><strong>Motor Current &amp; Power Estimator</strong><span>Electrical &amp; Instrumentation</span></div>
+          <div class="roadmap-item"><strong>Concrete Volume &amp; Rebar Quantity Estimate</strong><span>Civil / Structural</span></div>
+          <div class="roadmap-item"><strong>Pump Hydraulic Preliminary Check</strong><span>Mechanical / Process</span></div>
+          <div class="roadmap-item"><strong>Simple Equipment Foundation Load Summary</strong><span>Civil / Structural / Mechanical</span></div>
+        </div>
+        <div class="phase-block compact">
+          <strong>Future Integration Strategy</strong>
+          <ul class="roadmap-list">
+            <li>Develop and trial each tool as a standalone module before deeper integration.</li>
+            <li>Standardize visual identity and add navigation back to the Hub.</li>
+            <li>Evaluate one unified Toolkit application scope once modules are stable.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="info-card span-all update-panel">
+        <div>
+          <p class="step">APPLICATION UPDATE</p>
+          <h3>Toolkit Hub Version</h3>
+          <p>Check whether a newer Toolkit Hub interface is available.</p>
+          <p class="version-label">Current version: <strong>v1.2</strong></p>
+        </div>
+        <button class="secondary-button" id="check-update" type="button">Check for updates</button>
+      </article>
+    </section>
+
+    <a class="return-link" href="./index.html">← Back to Engineering Tools</a>
+    <footer class="footer"><p>Developed by <strong>Osman Saftari</strong></p><p>Rancang Bangun Engineering Toolkit · Phase 1 Hub Trial · v1.2</p></footer>
+  </main>
+  <div class="update-toast hidden" id="update-toast" role="alert"><div><strong>New version available</strong><span>An updated version of the Toolkit Hub is ready.</span></div><button id="apply-update" type="button">Update now</button></div>
+  <div class="status-toast hidden" id="status-toast" role="status"></div>
+  <script src="./assets/js/about.js?v=1.2.0" defer></script>
+</body>
+</html>

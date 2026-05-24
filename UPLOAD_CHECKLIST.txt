@@ -1,0 +1,47 @@
+Rancang Bangun Engineering Toolkit Hub v1.2 — Upload Checklist
+
+This package updates the Hub only. It does not alter the existing calculator repositories.
+
+Upload/replace all package contents in repository:
+Rancang-Bangun-Engineering-Toolkit
+
+New files introduced in v1.2:
+- propose.html
+- assets/js/propose.js
+- downloads/Form_Usulan_Pengembangan_Aplikasi_Engineering_Toolkit_Contoh_Pipe_Support_Span.docx
+
+Changed files:
+- index.html
+- about.html
+- sw.js
+- README.md
+- assets/css/styles.css
+- assets/js/app.js
+- assets/js/about.js
+
+Expected structure:
+Rancang-Bangun-Engineering-Toolkit/
+  index.html
+  about.html
+  propose.html
+  manifest.webmanifest
+  sw.js
+  README.md
+  UPLOAD_CHECKLIST.txt
+  assets/
+    css/styles.css
+    js/app.js
+    js/about.js
+    js/propose.js
+  downloads/
+    Form_Usulan_Pengembangan_Aplikasi_Engineering_Toolkit_Contoh_Pipe_Support_Span.docx
+  icons/
+    icon-192.png
+    icon-512.png
+
+Deployment verification:
+- Home page has only the Tools focus and no lower About/Application Update cards.
+- Navigation shows Tools / Propose a Tool / About & Status.
+- Propose page can download the DOCX form.
+- About page contains Application Update and candidate roadmap.
+- Footer shows Hub v1.2.
