@@ -1,4 +1,4 @@
-# Rancang Bangun Engineering Toolkit Hub v1.2
+# Rancang Bangun Engineering Toolkit Hub v1.2.
 
 ## Scope of this update
 Hub v1.2 updates the Toolkit Hub only. It does not modify the three existing engineering tools.
